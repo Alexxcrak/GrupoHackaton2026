@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F103",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/CMSIS",
+                "${workspaceFolder}/CMSIS/**",
+                "${workspaceFolder}/CMSIS/m-profile",
+                "${workspaceFolder}/rtos/CMSIS",
+                "${workspaceFolder}/rtos/CMSIS/**",
+                "${workspaceFolder}/rtos/CMSIS/m-profile",
+                "${workspaceFolder}/FreeRTOS/include",
+                "${workspaceFolder}/FreeRTOS/portable/GCC/ARM_CM3",
+                "${workspaceFolder}/rtos/src",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/src/adcConfig",
+                "**/CMSIS",
+                "**/CMSIS/**"
+            ],
+            "defines": [
+                "STM32F103xB"
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mcpu=cortex-m3",
+                "-mthumb"
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
